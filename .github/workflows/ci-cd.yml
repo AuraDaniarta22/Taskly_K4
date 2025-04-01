@@ -16,11 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Remove Old Flutter
+        run: |
+          sudo rm -rf /opt/hostedtoolcache/flutter
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: "3.7.2"
-          cache: true
+          cache: false  # Matikan cache agar tidak pakai versi lama
 
       - name: Verify Flutter & Dart version
         run: |
