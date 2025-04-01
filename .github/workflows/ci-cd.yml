@@ -24,6 +24,9 @@ jobs:
 
       - name: Verify Flutter version
         run: flutter --version
+        
+      - name: Verify Dart version
+        run: dart --version
 
       - name: Install dependencies
         run: flutter pub get
