@@ -3,11 +3,11 @@ name: Flutter CI/CD
 on:
   push:
     branches:
-      - main  # Workflow akan berjalan saat ada push ke branch "main"
+      - main
   pull_request:
     branches:
-      - main  # Workflow akan berjalan saat ada pull request ke "main"
-  workflow_dispatch:  # Memungkinkan menjalankan workflow secara manual
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.0'
+          flutter-version: '3.7.2'  # Gunakan Flutter yang mendukung Dart 3.7.2
 
       - name: Install Dependencies
         run: flutter pub get
