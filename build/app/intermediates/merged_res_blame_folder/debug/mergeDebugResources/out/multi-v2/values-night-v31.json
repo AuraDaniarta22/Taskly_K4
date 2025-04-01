@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\artas\\.gradle\\daemon\\8.10.2\\com.example.taskly.app-mergeDebugResources-4:\\values-night-v31\\values-night-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\.Tugas\\Agile Software Development\\app1\\taskly\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "from": {
+                        "startLines": "3,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "172,880",
+                        "endLines": "8,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "529,1044"
+                    },
+                    "to": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,417",
+                        "endLines": "7,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "412,581"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.taskly.app-mergeDebugResources-4:/values-night-v31/values-night-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\.Tugas\\Agile Software Development\\app1\\taskly\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "172,-1",
+                        "endLines": "8,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "527,-1"
+                    },
+                    "to": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,415",
+                        "endLines": "7,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "410,579"
+                    }
+                }
+            ]
+        }
+    ]
+}
