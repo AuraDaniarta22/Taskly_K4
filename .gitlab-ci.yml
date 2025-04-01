@@ -1,0 +1,31 @@
+stages:
+  - install
+  - test
+  - deploy
+
+variables:
+  NODE_VERSION: "18"
+
+before_script:
+  - curl -fsSL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
+  - apt-get install -y nodejs
+  - node -v
+  - npm -v
+
+install:
+  stage: install
+  script:
+    - npm install
+
+test:
+  stage: test
+  script:
+    - npm test
+
+deploy:
+  stage: deploy
+  only:
+    - main
+  script:
+    - npm install -g netlify-cli
+    - netlify deploy --prod --dir=dist --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
